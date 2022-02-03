@@ -1,0 +1,39 @@
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+
+	overflow: hidden;
+
+	transition: all 0.5s linear;
+}
+button {
+	padding: 5px 15px;
+	border-radius: 20px;
+	background: ;
+	box-shadow: 0 0 25px gray;
+	cursor: pointer;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+button:hover {
+	animation: backanimate  5.5s infinite linear;
+}
+@keyframes backanimate {
+	25% {
+		background: rgb(255, 11, 6);
+	}
+	50% {
+		background: rgb(208, 11, 255);
+	}
+	75% {
+		background: rgb(1, 27, 255);
+	}
+	100% {
+		background: rgba(0, 224, 52, 0.88);
+	}
+}
