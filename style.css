@@ -6,8 +6,7 @@ body {
 	height: 100vh;
 
 	overflow: hidden;
-
-	transition: all 0.5s linear;
+	transition: all 0s linear;
 }
 button {
 	padding: 5px 15px;
@@ -24,16 +23,16 @@ button:hover {
 	animation: backanimate  5.5s infinite linear;
 }
 @keyframes backanimate {
-	25% {
+	0%, 24.9999% {
 		background: rgb(255, 11, 6);
 	}
-	50% {
+	25%, 49.9999% {
 		background: rgb(208, 11, 255);
 	}
-	75% {
+	50%, 74.9999% {
 		background: rgb(1, 27, 255);
 	}
-	100% {
+	75%, 100% {
 		background: rgba(0, 224, 52, 0.88);
 	}
 }

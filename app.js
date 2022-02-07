@@ -6,18 +6,8 @@ let arrBackground = ['rgba(255, 0, 0, 1)', 'rgba(0, 0, 255, 1)', 'rgba(0, 255, 0
 if (button) {
 	button.addEventListener('click', function() {
 		var i = 0;
-		body.style.background = arrBackground[i];
-
 		button.style.display = 'none';
-
-		let timer = setInterval(function() {
-			if (i == 4) {
-				i = 0;
-			} else {
-				body.style.background = arrBackground[i];
-				i++;
-			}
-		}, 1500)
+		body.style.animation = 'backanimate  5.5s infinite linear';
 
 		window.onkeydown = function(event) {
 			if ( event.keyCode == 27 ) {
@@ -25,7 +15,7 @@ if (button) {
 					clearInterval(timer);
 				}, 0);
 
-				body.style.background = 'none';
+				body.style.animation = 'none';
 
 				button.style.display = 'block';
 			}
